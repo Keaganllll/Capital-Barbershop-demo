@@ -91,11 +91,15 @@ nav a:hover {
 }
 
 /* HERO (HOME PAGE) */
+/* HERO (HOME PAGE) */
 .hero {
   padding: 64px 0 46px;
   background:
     radial-gradient(circle at top, #243a34 0, var(--bg) 55%),
     var(--bg);
+  min-height: 75vh;          /* fills most of screen */
+  display: flex;
+  align-items: center;
 }
 
 .hero-inner {
