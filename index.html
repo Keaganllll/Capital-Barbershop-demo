@@ -26,119 +26,52 @@
 
 <main>
 
-  <!-- HERO: fills most of screen on phone + desktop -->
-  <section class="hero home-hero">
-    <div class="container hero-inner">
-      <div>
-        <div class="hero-eyebrow">Wichita, Kansas · West Central Ave</div>
-        <h1>Welcome to Capital Barbershop</h1>
-        <p>
-          Clean fades, sharp lines, and tailored service in a laid-back shop.
-          Book your next cut in seconds and pull up ready.
-        </p>
+  <!-- PAGE TITLE -->
+  <section class="section">
+    <div class="container">
+      <h1 style="text-align:center; margin-bottom: 12px; color: var(--accent);">
+        About Us
+      </h1>
 
-        <div class="hero-buttons">
-          <a href="booking.html" class="btn btn-primary">Book Appointment</a>
-          <a href="services.html" class="btn btn-outline">View Services</a>
+      <p style="text-align:center; color: var(--muted); max-width: 750px; margin: 0 auto;">
+        Capital Barbershop focuses on clean fades, sharp details, and a relaxed environment.
+        This section will later be replaced with the real story — how the shop started, the vision,
+        and what makes Capital different from other barbershops in Wichita.
+      </p>
+    </div>
+  </section>
+
+  <!-- ADDRESS + HOURS GRID -->
+  <section class="section">
+    <div class="container">
+
+      <div style="
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:18px;
+      ">
+
+        <!-- ADDRESS LEFT -->
+        <div class="card">
+          <h3 style="color: var(--accent); margin-bottom:6px;">Location</h3>
+          Capital Barbershop<br>
+          9424 W. Central Ave<br>
+          Wichita, Kansas
         </div>
-      </div>
 
-      <div class="hero-card">
-        <strong>Demo preview only.</strong><br><br>
-        This home page shows how Capital Barbershop’s site could look — with online booking,
-        feature photos and clear info for new and returning clients. All text and photos
-        will be replaced with real content if you decide to move forward.
-      </div>
-    </div>
-  </section>
+        <!-- HOURS RIGHT -->
+        <div class="card">
+          <h3 style="color: var(--accent); margin-bottom:6px;">Hours</h3>
+          Mon–Sat: 10am – 7pm<br>
+          Sunday: Closed<br><br>
 
-  <!-- DEMO PICTURES ON HOME (like PrimeTime) -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Featured Cuts (Placeholder)</h2>
-        <p>Sample imagery to show how Capital’s work could be highlighted on the home page.</p>
-      </div>
-
-      <div class="card">
-        <div class="gallery-grid">
-          <img src="https://images.pexels.com/photos/3998429/pexels-photo-3998429.jpeg?auto=compress&cs=tinysrgb&w=900"
-               alt="Barber cutting hair (placeholder)">
-          <img src="https://images.pexels.com/photos/3998425/pexels-photo-3998425.jpeg?auto=compress&cs=tinysrgb&w=900"
-               alt="Fade haircut (placeholder)">
-          <img src="https://images.pexels.com/photos/3992878/pexels-photo-3992878.jpeg?auto=compress&cs=tinysrgb&w=900"
-               alt="Barber chair (placeholder)">
+          <span style="font-size:0.8rem; color: var(--muted);">
+            (Hours shown are placeholders and can be updated anytime.)
+          </span>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ABOUT US (where they have “The Story”) -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>About Us</h2>
-        <p>Demo “About Us” copy – this would be replaced with Capital Barbershop’s real story.</p>
       </div>
 
-      <div class="card story-grid">
-        <p>
-          Capital Barbershop is built around tailored service — from first-time clients to weekly regulars.
-          The goal is simple: sharp cuts, clean fades, and an experience that feels like your spot, not just a chair.
-        </p>
-        <p>
-          Located on West Central Ave in Wichita, the shop blends modern styles with classic barbering.
-          This section will be updated with your real story, how you started, and what makes Capital different.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ADDRESS + HOURS (bottom of page, above map) -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Location & Hours</h2>
-      </div>
-
-      <div class="card">
-        <strong>Capital Barbershop</strong><br>
-        9424 W. Central Ave<br>
-        Wichita, Kansas<br><br>
-
-        <strong>Hours (example)</strong><br>
-        Mon–Sat: 10am – 7pm<br>
-        Sun: Closed<br><br>
-
-        <span style="font-size:0.8rem;color:var(--muted);">
-          Hours shown are sample only — will be updated with your actual schedule.
-        </span>
-
-        <div style="margin-top:12px;">
-          <a class="link-btn" href="https://www.google.com/maps/search/?api=1&query=9424+W+Central+Ave,+Wichita,+KS" target="_blank" rel="noopener">
-            Open in Google Maps
-          </a>
-          <a class="link-btn" href="https://maps.apple.com/?q=9424+W+Central+Ave,+Wichita,+KS" target="_blank" rel="noopener">
-            Open in Apple Maps
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MAP UNDER ADDRESS (like their site) -->
-  <section class="section">
-    <div class="container">
-      <div class="card map-card">
-        <iframe 
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3417.9!2d-97.477!3d37.696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!5e0!3m2!1sen!2sus!4v1700000000000">
-        </iframe>
-        <p style="font-size:0.8rem;margin-top:6px;color:var(--muted);">
-          Map is for demo purposes; tap the buttons above on a phone to open directions directly in Google Maps or Apple Maps.
-        </p>
-      </div>
     </div>
   </section>
 
