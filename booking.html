@@ -5,25 +5,32 @@
   <title>Book — Capital Barbershop (Demo)</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
 <header>
-  <div class="logo">CAPITAL BARBERSHOP CO.</div>
+  <div class="container header-inner">
+    <div class="brand-wrap">
+      <img src="capital-logo.png" alt="Capital Barbershop logo" class="logo-img">
+      <div class="logo-text">CAPITAL BARBERSHOP CO.</div>
+    </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="booking.html">Book</a>
-  </nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="booking.html">Book</a>
+    </nav>
+  </div>
 </header>
 
 <main>
   <section class="section">
     <div class="container">
-      <h2>Book Your Appointment</h2>
-      <p style="font-size:0.9rem;margin-bottom:10px;">
-        Pick a date and time that works for you. This demo uses the shop’s existing Calendly link.
-      </p>
+      <div class="section-header">
+        <h2>Book Your Appointment</h2>
+        <p class="booking-copy">
+          This demo page embeds Capital Barbershop’s existing Calendly link so clients can
+          pick a day and time directly from the site.
+        </p>
+      </div>
 
       <div class="card">
         <div class="calendly-inline-widget"
@@ -38,7 +45,7 @@
 </main>
 
 <footer>
-  Demo preview only — booking logic is powered by Calendly.
+  Demo preview only — booking powered by Calendly.
 </footer>
 
 </body>
