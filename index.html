@@ -5,16 +5,24 @@
   <title>Capital Barbershop — Demo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
 <header>
-  <div class="logo">CAPITAL BARBERSHOP CO.</div>
+  <div class="container header-inner">
+    <div class="brand-wrap">
+      <!-- Upload your logo as capital-logo.png in the repo -->
+      <img src="capital-logo.png" alt="Capital Barbershop logo" class="logo-img">
+      <div class="logo-text">CAPITAL BARBERSHOP CO.</div>
+    </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="booking.html">Book</a>
-  </nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#services">Services</a>
+      <a href="#story">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="booking.html">Book</a>
+    </nav>
+  </div>
 </header>
 
 <main>
@@ -22,23 +30,24 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container hero-inner">
-      <div class="hero-main">
-        <h1>Clean Fades. Sharp Lines.</h1>
+      <div>
+        <div class="hero-eyebrow">Wichita, Kansas · West Central Ave</div>
+        <h1>Clean fades. Sharp lines. Tailored service.</h1>
         <p>
-          Capital Barbershop — located on West Central in Wichita. 
-          Precision cuts and tailored service in a relaxed atmosphere.
+          Capital Barbershop on West Central delivers precision cuts and a laid-back shop vibe.
+          Book online, pull up, and leave looking sharp.
         </p>
 
         <div class="hero-buttons">
-          <a class="btn" href="booking.html">Book an Appointment</a>
-          <a class="btn outline" href="#services">View Services</a>
+          <a href="booking.html" class="btn btn-primary">Book an Appointment</a>
+          <a href="#services" class="btn btn-outline">View Services</a>
         </div>
       </div>
 
       <div class="hero-card">
-        <strong>Demo preview only.</strong><br>
-        Photos, prices and copy are placeholders and will be updated 
-        with shop details if you want to move forward.
+        <strong>Demo preview only.</strong><br><br>
+        This is a layout concept for Capital Barbershop using placeholder copy and stock photos.
+        All images, services and wording will be updated with real shop details if you decide to move forward.
       </div>
     </div>
   </section>
@@ -46,33 +55,77 @@
   <!-- SERVICES -->
   <section class="section" id="services">
     <div class="container">
-      <h2>Services (Demo)</h2>
+      <div class="section-header">
+        <h2>Services (Sample Layout)</h2>
+        <p>Demo services and pricing — everything here is placeholder and will be customized for the shop.</p>
+      </div>
 
       <div class="card">
-        Fade — $30<br>
-        Taper — $30<br>
-        Beard Trim — $20<br>
-        Line Up — $15<br>
-        Kids Cut — $25<br><br>
-        <em>*Pricing is sample only — final services and prices will be set with the shop.</em>
+        <div class="services-list">
+          <div class="service-row">
+            <span>Fade</span>
+            <span>$30</span>
+          </div>
+          <div class="service-row">
+            <span>Taper</span>
+            <span>$30</span>
+          </div>
+          <div class="service-row">
+            <span>Beard Trim</span>
+            <span>$20</span>
+          </div>
+          <div class="service-row">
+            <span>Line Up</span>
+            <span>$15</span>
+          </div>
+          <div class="service-row">
+            <span>Kids Cut</span>
+            <span>$25</span>
+          </div>
+        </div>
+
+        <p style="font-size:0.8rem;margin-top:10px;color:var(--muted);">
+          *All prices shown are examples only and not official shop pricing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY / ABOUT -->
+  <section class="section" id="story">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Vibe (Demo Copy)</h2>
+        <p>Example text to show how an “About” section could feel on the site.</p>
+      </div>
+
+      <div class="card story-grid">
+        <p>
+          Capital Barbershop is built around tailored service — from first-time clients to weekly regulars.
+          The goal is simple: sharp cuts, clean fades, and an experience that feels like your spot, not just a chair.
+        </p>
+        <p>
+          Located on West Central Ave in Wichita, the shop blends modern styles with classic barbering.
+          This section will be updated with your real story, how you started, and what makes Capital different.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- GALLERY -->
-  <section class="section">
+  <section class="section" id="gallery">
     <div class="container">
-      <h2>Gallery (Placeholder)</h2>
-      <p style="font-size:0.9rem;">
-        Sample imagery to show layout — these will be replaced with actual Capital Barbershop cuts.
-      </p>
+      <div class="section-header">
+        <h2>Gallery (Placeholder)</h2>
+        <p>Stock photos to show layout. These will be replaced with Capital’s real cuts and shop photos.</p>
+      </div>
 
       <div class="gallery-grid">
-        <img src="https://images.pexels.com/photos/3998429/pexels-photo-3998429.jpeg?auto=compress&cs=tinysrgb&w=800"
+        <img src="https://images.pexels.com/photos/3998429/pexels-photo-3998429.jpeg?auto=compress&cs=tinysrgb&w=900"
              alt="Barber cutting hair (placeholder)">
-        <img src="https://images.pexels.com/photos/3998425/pexels-photo-3998425.jpeg?auto=compress&cs=tinysrgb&w=800"
+        <img src="https://images.pexels.com/photos/3998425/pexels-photo-3998425.jpeg?auto=compress&cs=tinysrgb&w=900"
              alt="Fade haircut (placeholder)">
-        <img src="https://images.pexels.com/photos/3992878/pexels-photo-3992878.jpeg?auto=compress&cs=tinysrgb&w=800"
+        <img src="https://images.pexels.com/photos/3992878/pexels-photo-3992878.jpeg?auto=compress&cs=tinysrgb&w=900"
              alt="Barber chair (placeholder)">
       </div>
     </div>
@@ -81,29 +134,33 @@
   <!-- LOCATION & HOURS -->
   <section class="section">
     <div class="container">
-      <h2>Location</h2>
-
-      <div class="card">
-        Capital Barbershop<br>
-        9424 W. Central Ave<br>
-        Wichita, Kansas
-        <br><br>
-        <strong>Hours (example)</strong><br>
-        Mon–Sat: 10am – 7pm<br>
-        Sun: Closed
-        <br><br>
-        <em>Hours are sample only — updated with real schedule.</em>
+      <div class="section-header">
+        <h2>Location & Hours</h2>
       </div>
 
-      <div class="card map-card" style="margin-top:16px;">
-        <!-- Example Google Maps embed – can be swapped for exact embed later -->
+      <div class="card" style="margin-bottom:16px;">
+        <strong>Capital Barbershop</strong><br>
+        9424 W. Central Ave<br>
+        Wichita, Kansas<br><br>
+
+        <strong>Hours (example)</strong><br>
+        Mon–Sat: 10am – 7pm<br>
+        Sun: Closed<br><br>
+
+        <span style="font-size:0.8rem;color:var(--muted);">
+          Hours shown are sample only — will be updated with your actual schedule.
+        </span>
+      </div>
+
+      <div class="card map-card">
+        <!-- Demo map embed — can be updated with exact pin later -->
         <iframe 
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3417.889889773878!2d-97.477!3d37.696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQxJzQ2IiBOIDk3wrAyOCc0NiJX!5e0!3m2!1sen!2sus!4v1700000000000">
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3417.9!2d-97.477!3d37.696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!5e0!3m2!1sen!2sus!4v1700000000000">
         </iframe>
-        <p style="font-size:0.8rem;margin-top:6px;">
-          Map embed is for demo purposes — will be updated with precise pin.
+        <p style="font-size:0.8rem;margin-top:6px;color:var(--muted);">
+          Map is for demo purposes; can be updated with the exact location pin.
         </p>
       </div>
     </div>
