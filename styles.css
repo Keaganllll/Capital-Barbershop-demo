@@ -271,6 +271,21 @@ footer {
     position: static; /* avoid sticky weirdness on mobile */
   }
 
+
+    /* mobile nav spacing + centering */
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 6px 4px;
+    text-align: center;
+  }
   .hero {
     padding: 40px 0 30px;
   }
