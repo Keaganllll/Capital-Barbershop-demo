@@ -332,3 +332,55 @@ footer {
     min-height: 220px;
   }
 }
+
+
+/* --- Small visual polish: button hover --- */
+
+.btn {
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.15s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+  background: #e1c068;
+}
+
+.btn-outline:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+  background: rgba(212, 177, 90, 0.1);
+}
+/* --- Mobile hero centering & full-width buttons --- */
+@media (max-width: 600px) {
+  .hero-inner {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .hero-card {
+    text-align: left;
+  }
+}
+/* --- Home gallery slight lift --- */
+.gallery-grid img {
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 240px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.card {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+}
