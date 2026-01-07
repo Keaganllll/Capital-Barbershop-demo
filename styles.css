@@ -270,7 +270,13 @@ footer {
   header {
     position: static; /* avoid sticky weirdness on mobile */
   }
-
+  /* Center brand text on mobile only */
+  .brand-wrap,
+  .logo-text {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
 
     /* mobile nav spacing + centering */
   nav {
